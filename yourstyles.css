@@ -7,6 +7,24 @@ header{
 .title{
 text-align: center;
 }
-.price_title{
+.price{
     background-color: blue;
+    -webkit-text-fill-color: bisque;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#cart{
+    padding:16px;
+    border: 2px seagreen;
+    width: 600px;
+    margin:0 auto;
+}
+#cart > select,
+#cart > input{
+    margin-right: 16px;
+}
+output{
+    font-weight: 700;
 }

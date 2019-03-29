@@ -12,27 +12,48 @@
   <body>
     <header>
       <h1>Jurczykowski Inc.</h1>
+      <h3>A Matthew Company</h3>
     </header>
     <section class="container">
-      <form class="row">
+      <div class="row">
         <div class="col">
           <h3 class="title">Option A</h3>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequuntur dignissimos vel quidem aliquam alias est, eveniet qui nisi quos numquam doloribus reprehenderit deserunt. Velit unde optio ab saepe magni.</P>
-          <a class="price title" href="yourstyles.css">Request a Quote</a>
+          <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos possimus nihil quo assumenda architecto? Impedit quam facilis corporis quidem placeat consectetur repellat, unde modi, eum officiis recusandae deserunt? Laudantium, esse!</P>
+          <a class="price title" href="">$99.99</a>
         </div>
         <div class="col">
           <h3 class="title">Option B</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ratione voluptatibus temporibus! Impedit adipisci officia vero esse, deleniti dolorem? Inventore voluptatem, quibusdam accusamus nulla culpa ab dolores commodi saepe praesentium!</p>
-          <a class="price title" href="yourstyles.css">Request a Quote</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis sed sint a nostrum molestias culpa rerum corporis. Saepe, consectetur doloremque cum officiis tempora inventore reprehenderit at ipsum accusantium laborum perferendis.</p>
+          <a class="price title" href="">$149.99</a>
         </div>
         <div class="col">
           <h3 class="title">Option C</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi similique itaque dolore ipsam! Quibusdam iure debitis consectetur provident dicta a praesentium illum possimus, reiciendis, eius vitae impedit quaerat magnam aut.</p>
-          <a class="price title" href="yourstyles.css">Request a Quote</a>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis sed sint a nostrum molestias culpa rerum corporis. Saepe, consectetur doloremque cum officiis tempora inventore reprehenderit at ipsum accusantium laborum perferendis.</p>
+          <a class="price title" href="">$199.99</a>
         </div>
-      </form>
-    </section>
+      </div>
+      <form id="cart" class="row" method="GET" action="boot.html" oninput="calculate()">
+        Options: 
+        <select name="option" id="option">
+          <option value ="99.99">A</option>
+          <option value ="149.99">B</option>
+          <option value ="199.99">C</option>
 
+        </select>
+        Months: <input id="time" type="number" value="12" min="0">
+        Total: <output id="result" name="out" for="option time"></output> 
+        </form>
+    </section>
+   <script>
+     function calculate(){
+       let doc = document;
+       let option = doc.getElementById("option");
+       let time = doc.getElementById("time");
+       let result = doc.getElementById("result");
+
+       result.value = "$" + parseInt(option.value) * parsetInt(time.value);
+     }
+   </script>
 
 
     <!-- IMPORTED BOOTSTRAP CONTENT -->

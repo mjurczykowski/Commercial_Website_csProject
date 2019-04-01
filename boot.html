@@ -42,6 +42,7 @@
         </select>
         Months: <input id="time" type="number" value="12" min="0">
         Total: <output id="result" name="out" for="option time"></output> 
+        <input type="submit" value="Submit">
         </form>
     </section>
    <script>
@@ -51,7 +52,7 @@
        let time = doc.getElementById("time");
        let result = doc.getElementById("result");
 
-       result.value = "$" + parseInt(option.value) * parsetInt(time.value);
+       result.value = "$" + Number(parseFloat(option.value) * parseInt(time.value)).toPrecision(5);
      }
    </script>
 

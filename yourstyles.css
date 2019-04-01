@@ -17,14 +17,18 @@ text-align: center;
 
 #cart{
     padding:16px;
-    border: 2px seagreen;
+    border: 15px solid seagreen;
     width: 600px;
-    margin:0 auto;
+    margin:15% auto;
 }
 #cart > select,
-#cart > input{
+#cart > input,
+#cart > output{
+    width:75px;
     margin-right: 16px;
 }
-output{
+output
+{
+    width:100px;
     font-weight: 700;
 }

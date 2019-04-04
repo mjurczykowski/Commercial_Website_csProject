@@ -39,3 +39,9 @@ output
     width:100px;
     font-weight: 700;
 }
+
+h2 {
+    border: 5px solid slateblue; 
+    text-align: center;
+    
+}

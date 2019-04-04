@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Template</title>
+    <!-- IMPORTED BOOTSTRAP CONTENT -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- YOUR CSS STYLES -->
+    <link rel="stylesheet" href="yourstyles.css">
+  </head>
+<body>
+        <header>
+        <h1>Jurczykowski Inc.</h1>
+        <h3>A Matthew Company</h3>
+        </header>
+<h1>
+    Your order has been recieved. A recipt has been emailed to your account. 
+</h1>
+<h1>Estimated Shipment Time: </h1>
+<h2></h2>
+<script>
+    let r = Math.floor(6 * Math.random() +1)
+    let doc = document;
+    let h2 = doc.querySelector("h2")
+    h2.innerHTML="Your Item Will Arrive In Aproximatley " + r + " Days.";
+</script>
+</body>
+</html>
